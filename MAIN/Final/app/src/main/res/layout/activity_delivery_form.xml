@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Delivery_FormActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <include
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            layout="@layout/app_bar"/>
+        <LinearLayout
+            android:layout_below="@+id/bar"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginStart="30dp"
+                />
+            <EditText
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom1"
+                android:padding="10dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/date_del"
+                android:inputType="text"
+                android:maxLength="10"
+                android:layout_marginEnd="30sp"
+                android:layout_marginStart="30dp"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="20sp"
+                android:hint="date"
+                android:autofillHints=""
+                tools:ignore="TextFields" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/time"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                />
+            <EditText
+                android:background="@drawable/custom1"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/time_del"
+                android:maxLength="8"
+                android:inputType="text"
+                android:layout_marginStart="30sp"
+                android:layout_marginEnd="30dp"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="20sp"
+                android:hint="time"
+                android:autofillHints="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name : "
+                android:textColor="?android:textColorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                />
+
+
+            <EditText
+                android:id="@+id/name_del"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/custom1"
+                android:hint="@string/delivery_boy_name"
+                android:inputType="textPersonName"
+
+                android:padding="10dp"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="20sp"
+                android:autofillHints="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/type_of_delivery"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15sp"
+                />
+
+            <EditText
+                android:id="@+id/type_Del"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/custom1"
+                android:hint="@string/ex_food_delivery"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="20sp"
+                android:autofillHints="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Receiver Name : "
+                android:textColor="?android:textColorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15sp"
+                />
+            <EditText
+                android:id="@+id/rec_del"
+                android:background="@drawable/custom1"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:layout_marginStart="30sp"
+                android:layout_marginEnd="30dp"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="20sp"
+                android:hint="@string/receiver_name"
+                android:autofillHints="" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/flat_no"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="30dp"
+                />
+            <EditText
+                android:id="@+id/flat_del"
+                android:background="@drawable/custom1"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:layout_marginStart="30sp"
+                android:layout_marginEnd="20dp"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="20sp"
+                android:hint="flat no "
+                android:autofillHints="" />
+
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_no"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="20sp"
+                android:layout_marginStart="30dp"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:background="@drawable/custom1"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact_del"
+                android:inputType="phone"
+                android:layout_marginStart="30sp"
+                android:layout_marginEnd="30dp"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="20sp"
+                android:maxLength="10"
+                android:hint="@string/delivery_boy_contact_no"
+                android:autofillHints="" />
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/submit_delivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="250dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="100dp"
+                    android:gravity="center"
+                    android:text="Submit"
+                    android:textStyle="bold"
+
+
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Enable Night Mode">
+        <ListPreference android:title="Night Mode"
+            android:key="night"
+            android:defaultValue="false"
+            android:icon="@drawable/ic_baseline_brightness_medium_24"
+            android:entries="@array/theme_entries"
+            android:entryValues="@array/theme_value" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Screen Orientation">
+        <ListPreference
+            android:defaultValue="false"
+            android:key="ORIENTATION"
+            android:title="Orientation"
+            android:icon="@drawable/ic_orientation"
+            android:entries="@array/item_name"
+        android:entryValues="@array/item_value"/>
+    </PreferenceCategory >
+
+    <PreferenceCategory android:title="About"
+        android:icon="@drawable/ic_baseline_info_24">
+        <Preference android:title="Version"
+            android:summary="1.0.0"/>
+    </PreferenceCategory>
+    <PreferenceCategory/>
+
+</PreferenceScreen>

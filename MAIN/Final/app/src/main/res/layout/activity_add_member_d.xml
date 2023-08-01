@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMemberD">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <include
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            layout="@layout/app_bar"/>
+        <RelativeLayout
+            android:layout_below="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="20sp"
+                android:autofillHints=""
+                android:background="@drawable/custom1"
+                android:hint="@string/enter_full_name"
+                android:padding="15dp"
+                android:textColorHint="?attr/colorOnSecondary" />
+
+            <EditText
+                android:background="@drawable/custom1"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/member"
+                android:hint="@string/enter_total_no_of_members"
+                android:layout_marginTop="20sp"
+                android:layout_below="@id/name"
+                android:textColor="?attr/colorOnSecondary"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:textColorHint="?attr/colorOnSecondary"
+                android:inputType="number"
+                android:autofillHints="" />
+
+            <EditText
+                android:id="@+id/room"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/member"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="20sp"
+                android:autofillHints=""
+                android:background="@drawable/custom1"
+                android:hint="Enter Flat No."
+                android:inputType="text"
+                android:padding="15dp"
+                android:textColor="?attr/colorOnSecondary"
+                android:textColorHint="?attr/colorOnSecondary" />
+
+            <EditText
+                android:id="@+id/emailid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/room"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="20sp"
+                android:autofillHints=""
+                android:background="@drawable/custom1"
+                android:hint="Enter Email ID"
+                android:inputType="textEmailAddress"
+                android:padding="15dp"
+                android:textColor="?attr/colorOnSecondary"
+                android:textColorHint="?attr/colorOnSecondary" />
+
+            <EditText
+                android:background="@drawable/custom1"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact"
+                android:hint="@string/enter_contact_no"
+                android:layout_below="@id/emailid"
+                android:layout_marginTop="20sp"
+                android:textColor="?android:textColorPrimary"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:textColorHint="?attr/colorOnSecondary"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:autofillHints="" />
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contact"
+                android:layout_marginStart="100sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="100dp"
+                android:text="Add"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancel"
+                android:text="Cancel"
+                android:layout_marginTop="20sp"
+                android:layout_toRightOf="@id/add"
+                android:layout_marginStart="10sp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_below="@id/contact"
+                tools:ignore="ButtonOrder" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

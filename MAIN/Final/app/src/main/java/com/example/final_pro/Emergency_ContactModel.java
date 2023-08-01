@@ -1,0 +1,28 @@
+package com.example.final_pro;
+
+public class Emergency_ContactModel {
+    String name,contact;
+    public Emergency_ContactModel() {
+    }
+
+    public Emergency_ContactModel(String name, String contact) {
+        this.name = name;
+        this.contact = contact;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getContact() {
+        return contact;
+    }
+
+    public void setContact(String contact) {
+        this.contact = contact;
+    }
+}

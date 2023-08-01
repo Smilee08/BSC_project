@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permanent">Permanent</string>
+    <string name="guest">Guest</string>
+    <string name="time_out">time out</string>
+    <string name="submit">submit</string>
+    <string name="vehical_type">Vehical Type:</string>
+    <string name="vehical_no">vehical no</string>
+    <string name="name">Name:</string>
+    <string name="wing">Wing:</string>
+
+    <string name="enter_room_no">Enter Room No.</string>
+    <string name="b">B</string>
+    <string name="c">C</string>
+    <string name="enter_contact_no">Enter contact No.</string>
+    <string name="enter_total_no_of_members">Enter Total No. of Members</string>
+    <string name="enter_full_name">Enter Full Name</string>
+    <string name="details">Details</string>
+
+    //Bill PAYMENT
+    <string name="payments">PAYMENTS</string>
+    <string name="choose_payments">CHOOSE PAYMENTS</string>
+    <string name="maintenance">MAINTENANCE</string>
+    <string name="rent">RENT</string>
+    <string name="utility">UTILITY</string>
+    <string name="my_payments">MY PAYMENTS</string>
+    <string name="log_details">Log Details</string>
+    <string name="delivery_boy_contact_no">delivery boy contact no</string>
+    <string name="receiver_name">receiver name</string>
+
+
+    <string name="days">Days :</string>
+    <string name="availability">availability</string>
+    <string name="type">Type:</string>
+    <string name="delivery_boy_name">delivery boy name</string>
+    <string name="time">Time:</string>
+    <string name="type_of_delivery">Type of Delivery:</string>
+    <string name="ex_food_delivery">ex:food delivery</string>
+    <string name="flat_no">Flat No:</string>
+    <string name="logout">LOGOUT</string>
+    <string name="update">Update</string>
+
+    <string name="availibility">Availibility</string>
+    <string name="days_availability">days availability</string>
+    <string name="_l">___________________________________________________</string>
+    <string name="name_of_the_owner">Name of the Owner</string>
+
+    <string name="date">Date :</string>
+    <string name="date_">Date</string>
+    <string name="time_in">Time In :</string>
+    <string name="time_">Time</string>
+    <string name="name_">Name :</string>
+    <string name="visitor_s_name">Visitor\'s Name</string>
+    <string name="contact_no">Contact No. :</string>
+    <string name="visitor_s_contact_no">Visitor\'s Contact No.</string>
+    <string name="guest_of">Guest Of :</string>
+    <string name="room_no_">Room No.</string>
+    <string name="flat_no_">Flat No. :</string>
+    <string name="name_of_room_owner_">Name of Room Owner</string>
+    <string name="upload_from_gallery">Upload From Gallery</string>
+
+    <string name="enter_amount_to_be_paid">Enter amount to be paid</string>
+    <string name="pay">PAY</string>
+</resources>

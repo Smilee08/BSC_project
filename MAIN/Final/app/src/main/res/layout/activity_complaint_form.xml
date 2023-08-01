@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    tools:context=".Complaint_FormActivity">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+<include
+android:id="@+id/bar"
+android:layout_width="match_parent"
+android:layout_height="?attr/actionBarSize"
+layout="@layout/app_bar"/>
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="10dp" tools:context=".MainActivity2_form" tools:layout_editor_absoluteX="-42dp" tools:layout_editor_absoluteY="68dp">
+
+
+        <TextView android:id="@+id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="96dp" android:ems="9" android:padding="7dp" android:text="@string/complaint_type_drop" android:textSize="15sp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+        <TextView android:id="@+id/textView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="200dp" android:ems="9" android:padding="7dp" android:text="@string/category"  android:textSize="15sp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.005" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+        <TextView android:id="@+id/textView6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="304dp" android:ems="9" android:padding="7dp" android:text="@string/description_content"  android:textSize="15sp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.003" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+        <Spinner android:id="@+id/spinner" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="136dp" android:autofillHints="Select" android:contentDescription="@string/Select" android:padding="5dp" android:textSize="15sp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.362" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+        <EditText android:id="@+id/e1"
+            android:background="@drawable/box" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="240dp" android:hint="@string/mention_in_few_words" android:importantForAutofill="no" android:inputType="text" android:padding="5dp"  android:textSize="15sp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" tools:ignore="SpeakableTextPresentCheck,TextContrastCheck"/>
+        <EditText android:id="@+id/e2"
+            android:layout_width="match_parent"
+            android:background="@drawable/box" android:layout_height="100dp" android:layout_marginTop="344dp" android:autofillHints="" android:ems="10" android:gravity="start|top" android:hint="@string/write_your_complaint_here" android:inputType="textMultiLine" android:padding="5dp" android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="LabelFor,SpeakableTextPresentCheck,TextContrastCheck"/>
+        <Button android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp" android:ems="6"
+            android:padding="5dp" android:text="@string/save"
+            android:textSize="20sp" android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/e2"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+   </RelativeLayout>
+</ScrollView>

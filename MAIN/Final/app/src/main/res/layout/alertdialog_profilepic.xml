@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_picture"
+        android:focusable="true"
+        android:textStyle="bold"
+        android:textColor="?attr/colorOnSecondary"
+        android:textSize="20sp"
+        android:layout_marginStart="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cam"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_baseline_photo_camera_24"
+            tools:ignore="OnClick,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-70dp"
+            android:layout_marginTop="90dp"
+            android:textColor="?attr/colorOnSecondary"
+            android:layout_marginBottom="20dp"
+            android:text="@string/camera" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/gal"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:cropToPadding="true"
+            android:src="@drawable/ic_baseline_photo_24"
+            tools:ignore="OnClick,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-70dp"
+            android:textColor="?attr/colorOnSecondary"
+            android:layout_marginTop="90dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/gallary" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/rem"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:cropToPadding="true"
+            android:src="@drawable/ic_baseline_delete_24"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-70dp"
+            android:textColor="?attr/colorOnSecondary"
+            android:layout_marginTop="90dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/remove" />
+    </LinearLayout>
+
+
+</LinearLayout>

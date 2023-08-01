@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Otp"
+    tools:ignore="ScrollViewCount">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <include
+        android:id="@+id/set"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        layout="@layout/app_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100sp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv1"
+            android:src="@drawable/ic_baseline_offline_pin_24"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:contentDescription="@string/done" />
+
+        <TextView
+            android:id="@+id/tx2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/iv1"
+            android:text="@string/enter_otp_sent_to_your_mobile_no"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tx3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tx2"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_below="@id/tx3"
+            android:id="@+id/l2"
+            >
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/ip1"
+                android:gravity="center"
+                android:importantForAutofill="no"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:background="@drawable/custom2"
+                tools:ignore="LabelFor" />
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/ip2"
+                android:gravity="center"
+                android:layout_marginStart="5dp"
+                android:importantForAutofill="no"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:background="@drawable/custom2"
+                tools:ignore="LabelFor" />
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/ip3"
+                android:gravity="center"
+                android:layout_marginStart="5dp"
+                android:importantForAutofill="no"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:background="@drawable/custom2"
+                tools:ignore="LabelFor" />
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/ip4"
+                android:gravity="center"
+                android:layout_marginStart="5dp"
+                android:importantForAutofill="no"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:background="@drawable/custom2"
+                tools:ignore="LabelFor" />
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/ip5"
+                android:gravity="center"
+                android:layout_marginStart="5dp"
+                android:importantForAutofill="no"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:background="@drawable/custom2"
+                tools:ignore="LabelFor" />
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/ip6"
+                android:gravity="center"
+                android:layout_marginStart="5dp"
+                android:importantForAutofill="no"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:background="@drawable/custom2"
+                tools:ignore="LabelFor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/l3"
+            android:layout_below="@id/l2"
+            android:layout_alignEnd="@id/l2"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv2"
+                android:src="@drawable/ic_baseline_refresh_24"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:contentDescription="@string/resend" />
+
+            <TextView
+                android:id="@+id/tx4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/resend_otp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="?android:textColorPrimary"
+                android:layout_marginEnd="50dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt2"
+            android:layout_width="330sp"
+            android:layout_height="60sp"
+            android:layout_below="@id/l3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18sp"
+            android:layout_marginBottom="100dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="@string/verify_otp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    </FrameLayout>
+</ScrollView>

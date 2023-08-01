@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Attendenceform">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            layout="@layout/app_bar"/>
+
+        <TextView
+            android:id="@+id/namelab"
+            android:layout_below="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="80dp"
+            android:text="Name:"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+             />
+
+        <EditText
+            android:id="@+id/name"
+            android:background="@drawable/custom1"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/namelab"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:hint="name"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_below="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Time In:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/timein"
+            android:background="@drawable/custom1"
+            android:padding="10dp"
+            android:layout_below="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="50dp"
+            android:hint="Time in"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/timeout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timein"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Time Out:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/timeout"
+            android:background="@drawable/custom1"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timeout1"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="50dp"
+            android:hint="time out"
+            android:inputType="text"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+
+
+
+        <TextView
+            android:id="@+id/da"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timeout"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Date:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/date1"
+            android:background="@drawable/custom1"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/da"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="50dp"
+            android:hint="Date"
+            android:inputType="text"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+        <Button
+            android:id="@+id/perSub"
+            android:layout_below="@id/date1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:layout_marginBottom="100dp"
+            android:text="submit" />
+
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>
